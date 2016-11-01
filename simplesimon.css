@@ -1,0 +1,100 @@
+body{
+
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    margin-left: 47%;
+    margin-top: 2%;
+
+}
+
+
+
+#simonbox{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    color:white;
+
+}
+
+.square{
+    opacity: .5;
+}
+
+#blue{
+    background-color: #0c2340;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 1px black;
+
+
+}
+
+/*#topright:active{
+    /*background-color: darkblue;
+    opacity: 0;
+}*/
+
+#red{
+    background-color: red;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: flex-start;
+    align-content:flex-end
+    box-shadow: 1px 1px 1px black;
+
+}
+
+/*#topleft:active{
+    background-color: darkred;
+}*/
+
+#pink{
+    background-color: deeppink;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: flex-end;
+    align-content:flex-start;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+/*#bottomleft:active{
+    background-color: pink;
+}*/
+
+#gold{
+    background-color: orange;
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: flex-end;
+    align-content:flex-end;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+/*#bottomright:active{
+    background-color: darkorange;
+}*/
+
+.squareflash{
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
