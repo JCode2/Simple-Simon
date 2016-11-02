@@ -1,9 +1,9 @@
 'use strict';
 
-var pattern = [];
 var sequence = [];
+var userpattern = [];
 
-//var sequence1 = ["1","1,1", "1,1,2", "1,1,2,4"];
+
 function round() {
     console.log(animate(sequence));
     var color = Math.floor(Math.random() * 4) + 1;
@@ -37,3 +37,24 @@ $('.square').click(function () {
     ;
     console.log('it works');
 });
+
+function userInput() {
+
+    $('.square').click(function () {
+        userpattern.push($(this).attr('id'));
+        console.log(userpattern);
+    });
+}
+userInput();
+
+function match() {
+    if (userpattern = sequence) {
+
+    }
+
+    else {
+
+        alert('YOU LOSE!')
+
+    }
+}
