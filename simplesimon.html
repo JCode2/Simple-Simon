@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="simplesimon.css">
 
+
 </head>
 
 <body class="container-fluid">
@@ -15,78 +16,38 @@
 <div id="simonbox">
 
     <div class="col-md-2">
-    <div id="blue" class="square" data-tile="1">1</div>
-    <div id="red" class="square" data-tile="2">2</div>
-        </div>
+        <div id="blue" class="square" data-tile="1">1</div>
+        <div id="red" class="square" data-tile="2">2</div>
+    </div>
 
     <div class="col-md-2">
-    <div id="gold" class="square" data-tile="3">3</div>
-    <div id="pink" class="square" data-tile="4">4</div>
-        </div>
+        <div id="gold" class="square" data-tile="3">3</div>
+        <div id="pink" class="square" data-tile="4">4</div>
+    </div>
 
 </div>
+
+<div id="round"><h3>Round</h3></div>
+
 <div>
-<button onclick="round()" id="start" class="btn btn-success">Play</button>
+    <button onclick="round()" id="start" class="btn btn-success">Play</button>
     <h3 id="watch"></h3>
-    </div>
+</div>
+
 <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-<script>
+        crossorigin="anonymous">
+</script>
 
-     var sequence1 = [1];
-     var sequence2 = [1,1];
-     var sequence3 = [1,1,2];
-     var sequence4 = [1,1,2,4];
-     var sequence = [sequence1, sequence2, sequence3, sequence4];
-
-     //var sequence1 = ["1","1,1", "1,1,2", "1,1,2,4"];
-
-    function round() {
-        console.log(animate(sequence));
-
-
-
-        function animate(sequence) {
-            var i = 0;
-            var interval = setInterval(function () {
-                flash(sequence[i]);
-
-                i++;
-                if (i = sequence.length) {
-                    clearInterval(interval);
-
-                }
-            }, 500);
-
-
-            function flash(square) {
-
-                $('[data-tile=' + square + ']').addClass('squareflash');
-                window.setTimeout(function () {
-                    $('[data-tile=' + square + ']').removeClass('squareflash');
-                }, 700);
-            }
-        }
-    }
-
-
-
-    $('.square').click(function () {
-            $(this).css("opacity", "1");
-        console.log('it works');
-
-    });
-
-
-
-/*$('#start').click(function () {
-    document.getElementById('#watch').innerHTML= " Watch The Sequence ";
-})*/
-
+<script
+        src="simon.js">
 
 
 </script>
+
+
+
+
 </body>
 </html>

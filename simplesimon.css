@@ -9,11 +9,18 @@ h1{
     margin-top: 5%;
 }
 
-#start{
+#round {
     display: flex;
     justify-content: center;
-    margin-left: 47%;
+    align-content: center;
     margin-top: 2%;
+}
+
+#start{
+    display: flex;
+    align-content: center;
+    margin-top: 1%;
+    margin-left: 48%;
 
 }
 
@@ -24,6 +31,7 @@ h1{
     justify-content: center;
     margin-top: 3%;
     color:white;
+
 
 }
 
@@ -96,5 +104,5 @@ h1{
 
 .squareflash{
     opacity: 1;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms;
 }
