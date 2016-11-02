@@ -1,15 +1,15 @@
 'use strict';
 
-var sequence = [];
-var userpattern = [];
+var sequence = [];      //empty arrays to push to //
+var userpattern = []; //**//
 
 
 function round() {
-    var colors = ["blue", "red", "gold", "pink"];
-    var color = Math.floor(Math.random() * 4);
+    var colors = ["blue", "red", "gold", "pink"]; //an array of colors that will be associated with //
+    var color = Math.floor(Math.random() * 4);  //creates a random number between 0 - 4 //
 
     animate(sequence);
-    sequence.push(colors[color]);
+    sequence.push(colors[color]);       //associates the random number with the color number in the color array //
 }
 
 function animate(sequence) {
@@ -20,17 +20,21 @@ function animate(sequence) {
         if (i == sequence.length) {
             clearInterval(interval);
         }
-    }, 500);
+    }, 600);
 
     console.log('WORK DAMN YOU')
 }
+
+//function that adds and removes class squareflash to show the sequence//
 
 function flash(square) {
     $('[data-tile="' + square + '"]').addClass('squareflash');
     window.setTimeout(function () {
         $('[data-tile="' + square + '"]').removeClass('squareflash');
-    }, 500);
+    }, 300);
 }
+
+//When you click a tile opacity changes, also pushes clicks to an array and compares it to the sequence array//
 
 $('.square').click(function () {
     $(this)
@@ -43,6 +47,8 @@ $('.square').click(function () {
 
     console.log('it works');
 });
+
+//Checks if userpattern array equals sequence array//
 
 function match() {
 
