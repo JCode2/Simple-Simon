@@ -1,7 +1,8 @@
 'use strict';
 
 var sequence = [];      //empty arrays to push to //
-var userpattern = []; //**//
+var userpattern = []; //**//\
+//var i;
 
 
 function round() {
@@ -21,7 +22,7 @@ function animate(sequence) {
             clearInterval(interval);
         }
     }, 300);
-
+    console.log((sequence));
     console.log('WORK DAMN YOU')
 }
 
@@ -52,7 +53,7 @@ $('.square').click(function () {
 
 function match() {
 
-    if (userpattern.toString() != sequence.toString()) {
+    if (userpattern.toString() != sequence.toString()) {  //not comparing the way i want
         alert('YOU LOSE!')
     }
 
@@ -60,6 +61,7 @@ function match() {
 
         alert('That is correct. Click ok to continue');
         round();
-
+        document.getElementById('round').innerHTML = "<h3>Round " + parseInt(sequence.length) + "</h3>";
+        console.log(parseInt(sequence))
     }
 }
