@@ -20,7 +20,7 @@ function animate(sequence) {
         if (i == sequence.length) {
             clearInterval(interval);
         }
-    }, 600);
+    }, 300);
 
     console.log('WORK DAMN YOU')
 }
@@ -58,7 +58,8 @@ function match() {
 
     else {
 
-        alert('That is correct. Click ok to continue')
+        alert('That is correct. Click ok to continue');
+        round();
 
     }
 }
