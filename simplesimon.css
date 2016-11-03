@@ -19,9 +19,10 @@ h1{
 
 #start{
     display: flex;
-    align-content: center;
-    margin-top: 1%;
-    margin-left: 48%;
+    justify-content: center;
+    /*margin-top: 1%;
+    margin-left: 48%;*/
+    padding: 2%;
 
 }
 
@@ -48,6 +49,7 @@ h1{
     justify-content: flex-start;
     margin-bottom: 10%;
     box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
 
 
 }
@@ -65,6 +67,7 @@ h1{
     justify-content: flex-start;
     align-content: flex-end;
     box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
 
 }
 
@@ -80,6 +83,7 @@ h1{
     justify-content: flex-end;
     align-content:flex-start;
     box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
 
 }
 
@@ -96,6 +100,7 @@ h1{
     align-content:flex-end;
     margin-bottom: 10%;
     box-shadow: 5px 5px 5px black;
+    border-radius: 50%;
 
 }
 
@@ -105,5 +110,5 @@ h1{
 
 .squareflash{
     opacity: 1;
-    transition: opacity 500ms;
+    /* transition: opacity ;*/
 }
