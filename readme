@@ -1,0 +1,18 @@
+*Simple Simon Read Me*
+
+Simple Features
+
+    1.To begin the game click the "Start" button.
+    2.Once the button has been clicked it will begin the "Simon Sequence".
+    3.With each correct sequence the user inputs, the difficulty will become harder and
+      the round number will change accordingly.
+    4. If the user inputs the wrong sequence, an alert will pop up and inform the user that he/she has lost.
+    5. Once the user loses, the wording within the start button says "Start Over."
+
+
+Things to Add/Fix
+
+    1. User Interface (U.I.) can be updated to be more appealing or user friendly.
+    2. Can and maybe should add a feature that makes the sequences run faster after a predetermined
+       amount of rounds.
+    3. Add sound to the squares (now circles) so when they flash a different sound is played for each one.
