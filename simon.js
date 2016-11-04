@@ -53,6 +53,7 @@ function match() {
     if (userpattern.toString() != sequence.slice(0, userpattern.length).toString()) {
         alert('YOU LOSE!');
         document.getElementById('start').innerHTML = "Start Over";
+        sequence = [];
         return;
 
     }
