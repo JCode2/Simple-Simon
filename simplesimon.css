@@ -17,7 +17,7 @@ h1{
     margin-top: 2%;
 }
 
-#start{
+#startButton {
     display: flex;
     justify-content: center;
     /*margin-top: 1%;
