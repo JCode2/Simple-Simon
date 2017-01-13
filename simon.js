@@ -59,10 +59,9 @@ function match() {
     }
 
     if (userpattern.length == sequence.length) {
-
-            //alert('That is correct. Click ok to continue');
-            round();
-            document.getElementById('round').innerHTML = "<h3>Round " + parseInt(sequence.length) + "</h3>";
+        //alert('That is correct. Click ok to continue');
+        round();
+        document.getElementById('round').innerHTML = "<h3>Round " + parseInt(sequence.length) + "</h3>";
     }
 
 }
