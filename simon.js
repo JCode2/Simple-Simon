@@ -23,7 +23,7 @@ function animate(sequence) {
         if (i == sequence.length) {
             clearInterval(interval);
         }
-    }, 600);
+    }, 1000);
 }
 
 //function that adds and removes class squareflash to show the sequence//
