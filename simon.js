@@ -61,14 +61,14 @@ function match() {
     if (userpattern.length == sequence.length) {
         //alert('That is correct. Click ok to continue');
         round();
-        document.getElementById('round').innerHTML = "<h3>Round " + parseInt(sequence.length) + "</h3>";
+        document.getElementById('round').innerHTML = "<h2>Round</h2> " + "<h1>" + parseInt(sequence.length) + "</h1>";
     }
 
 }
 
 function initialround() {
     $('#start').click(function () {
-        document.getElementById('round').innerHTML = "<h3>Round 1 </h3>";
+        document.getElementById('round').innerHTML = "<h2>Round</h2> <h1> 1 </h1>";
     })
 
 
